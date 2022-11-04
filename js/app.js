@@ -1,11 +1,27 @@
+//Start Navbar Toggler
+const navbarToggler = document.querySelector('.navbar-toggler');
+const sliders = document.querySelector('.sliders');
+const btnclose = document.querySelector('.btn-close');
+
+navbarToggler.addEventListener('click',()=>{
+    sliders.classList.add('active');
+});
+
+btnclose.addEventListener('click',()=>{
+    sliders.classList.remove('active');
+});
+//End Navbar Toggler
+
+//Start Shopping Cart
+
 let addbtns = document.querySelectorAll('.addtocart')
 let lists = document.querySelector('.lists');
 let carts = document.querySelector('.carts');
 let productLists = document.querySelector('.product-lists');
+let imgsections = document.querySelector('.img-section');
 const itemLists = [];
     
 addbtns.forEach((addbtn)=>{
-    console.log(addbtn)
     addbtn.addEventListener('click',(e)=>{
         let count = Number(carts.getAttribute('data-count'));
         carts.setAttribute('data-count',count +1);
@@ -18,7 +34,8 @@ addbtns.forEach((addbtn)=>{
       
         let cloneItemName = name.cloneNode(true);
         let clonePrice = price.cloneNode(true);
-        // let cloneimgs = imgs.cloneNode(true)
+        let images = document.querySelector('.img')
+        let cloneimages = images.cloneNode(true);
 
        let createDiv = document.createElement('div');
        createDiv.classList.add('lists');
@@ -26,7 +43,7 @@ addbtns.forEach((addbtn)=>{
        createDiv.innerHTML = `
        <div class="row">
        <div class="col-4">
-          
+          <img src="${cloneimages.src}" class="cart-imgs"/>
        </div>
        <div class="col-4">
            <h5>${cloneItemName.innerText}</h5>
@@ -63,3 +80,5 @@ addbtns.forEach((addbtn)=>{
      })
     });
    });
+
+   //End Shopping Cart

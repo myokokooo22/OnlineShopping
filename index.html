@@ -16,6 +16,23 @@
     <!--START HEADER SECTION-->
         <header>
             <!-- Start Navbar  -->
+                <!--Start Slider Section in Mobile View-->
+               <div class="d-lg-none fixed sliders">
+                <div class="p-3">
+                    <a href="#" class="navbar-brand text-white"><h2>Brand<span>Name</span></h2></a>
+                    <span class="btn-close"></span>
+                </div>
+                 
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Products</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Our Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact Us</a></li>
+                </ul>
+               </div>
+            <!--End Slider Section in Mobile View-->
+
                 <nav class="navbar navbar-expand-lg navs navbar-white bg-white">
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                         <span class="navbar-toggler-icon"></span>
@@ -23,8 +40,8 @@
                    
                    <a href="#" class="navbar-brand mx-3"><h3>Brand<span>Name</span></h3></a>
 
-                    <div id="nav" class="navbar-collapse collapse mx-3">
-                        <ul class="navbar-nav mx-auto">
+                    <div id="nav" class="d-lg-flex d-none mx-auto">
+                        <ul class="navbar-nav">
                             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
@@ -40,35 +57,94 @@
                 </nav>
 
             <!-- End Navbar  -->
+
+            <!--Start Banner-->
+                <div class="container-fluid mb-5">
+                    <div class="row">
+                        <div class="col-lg-2 d-lg-block d-none">
+                            <div class="categories-box">
+                                <h5>Categories</h5>
+                                <ul>
+                                    <li><a href="#">Mens Wear</a></li>
+                                    <li><a href="#">Women Wear</a></li>
+                                    <li><a href="#">Cosmetics</a></li>
+                                    <li><a href="#">IT Products</a></li>
+                                    <li><a href="#">Home Appliances</a></li>
+                                    <li><a href="#">Funitures</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-12">
+                            <div id="carousel" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./assets/imgs/datas/banners/banner2.jpg" class="d-block bannerPhotos" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/imgs/datas/banners/banner3.jpg" class="d-block bannerPhotos" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/imgs/datas/banners/banner1.png" class="d-block bannerPhotos" alt="...">
+                                  </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            <!--End Banner-->
         </header>
     <!-- END HEADER SECTION  -->
 
     <!-- START PRODUCT SECTION  -->
-        <div class="container-fluid">
+        <div class="container">
+            <div class="row text-center">
+                <h3>Products</h3>
+            </div>
+
+
+            <form action="" class="mb-4">
+                <input type="text" name="search" id="serch" class="form-control controls" placeholder="Serach...">
+            </form>
             <div class="row product-lists">
-                <div class="col-lg-4 col-sm-6 mb-3">
+               
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="item">
                         <div class="img-section">
-                            <img src="./assets/imgs/datas/women/girlderss_1.png" alt="">
+                            <img src="./assets/imgs/datas/women/girlblouse_1.png" class="img" alt="shop">
                         </div>
                         <div class="desc">
-                            <h4>Girl Dress</h4>
-                            <p>Availble Color: <span>White</span></p> 
-                            $<span class="fw-bold price">32.05</span>
+                            <h4>Blouse</h4>
+                            <small attr="women">For Women</small>
+                            <p>Availble Color: <span>Red</span></p> 
+                            $<span class="fw-bold price">19.50</span>
                             <div>
                                 <button class="addtocart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
 
-                <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="item">
                         <div class="img-section">
-                            <img src="./assets/imgs/datas/women/girljeans_1.png" alt="">
+                            <img src="./assets/imgs/datas/women/girljeans_1.png" class="img" alt="shop">
                         </div>
                         <div class="desc">
-                            <h4>Girl Jeans</h4>
+                            <h4>Lady's Jeans</h4>
+                            <small attr="women">For Women</small>
                             <p>Availble Color: <span>Blue</span></p> 
                             $<span class="fw-bold price">28.00</span>
                             <div>
@@ -78,25 +154,127 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                     <div class="item">
                         <div class="img-section">
-                            <img src="./assets/imgs/datas/women/girlblouse_1.png" alt="">
+                            <img src="./assets/imgs/datas/women/girlderss_1.png" class="img" alt="shop">
                         </div>
                         <div class="desc">
-                            <h4>Girl Blouse</h4>
-                            <p>Availble Color: <span>Red</span></p> 
-                            $<span class="fw-bold price">19.50</span>
+                            <h4>Dress</h4>
+                            <small attr="women">For Women</small>
+                            <p>Availble Color: <span>White</span></p> 
+                            $<span class="fw-bold price">32.05</span>
                             <div>
                                 <button class="addtocart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/men/menjeans_1.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Men's Jeans</h4>
+                            <small attr="men">For Men</small>
+                            <p>Availble Color: <span>Blue</span></p> 
+                            $<span class="fw-bold price">40.30</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/men/mensuit_1.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Suit</h4>
+                            <small attr="men">For Men</small>
+                            <p>Availble Color: <span>Khaki</span></p> 
+                            $<span class="fw-bold price">88.50</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/men/menshirt_1.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Shirt</h4>
+                            <small attr="men">For Men</small>
+                            <p>Availble Color: <span>Blue</span></p> 
+                            $<span class="fw-bold price">40.75</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/others/makeup.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Revlon</h4>
+                            <small attr="cosmetics">For Women</small>
+                            <p>Type: <span>Makeup - Colostay</span></p> 
+                            $<span class="fw-bold price">19.00</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/others/perfume.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Shalima</h4>
+                            <small attr="cosmetics">For Women</small>
+                            <p>Type: <span>Perfume</span></p> 
+                            $<span class="fw-bold price">25.00</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/others/shoe.png" class="img" alt="shop">
+                        </div>
+                        <div class="desc">
+                            <h4>Nike</h4>
+                            <small attr="men">For All Genders</small>
+                            <p>Type: <span>Airforce</span></p> 
+                            $<span class="fw-bold price">72.50</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     
-
         <!-- Start Shop Cart Modal-->
         <div class="modal fade" id="modal">
             <div class="modal-dialog modal-md">
