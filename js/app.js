@@ -1,9 +1,17 @@
-let addbtns = document.querySelectorAll('.addtocart');
+let addbtns = document.querySelectorAll('.addtocart')
 let lists = document.querySelector('.lists');
+let carts = document.querySelector('.carts');
+let productLists = document.querySelector('.product-lists');
 const itemLists = [];
-
+    
 addbtns.forEach((addbtn)=>{
+    console.log(addbtn)
     addbtn.addEventListener('click',(e)=>{
+        let count = Number(carts.getAttribute('data-count'));
+        carts.setAttribute('data-count',count +1);
+      
+       carts.classList.add('active')
+
        let price = e.target.parentNode.previousElementSibling;
        let name = e.target.parentNode.parentNode.childNodes[1];
        let imgs = e.target.parentNode.parentNode.parentNode.childNodes[1].childNodes[1].src;
@@ -26,6 +34,7 @@ addbtns.forEach((addbtn)=>{
        <div class="col-4">
            <span>$</span><span class="itemprice">${(clonePrice.innerText)}</span>
        </div>
+      
    </div>
  </div>
        `;
@@ -35,7 +44,6 @@ addbtns.forEach((addbtn)=>{
 
     lists.appendChild(createDiv);
     itemLists.push(createDiv);
-
 
     let pricedata = [];
     let priceClone = lists.querySelectorAll('.itemprice');
@@ -51,7 +59,7 @@ addbtns.forEach((addbtn)=>{
         // console.log(finalPrice)
 
         let updateprice = document.getElementById('total');
-        updateprice.textContent = finalPrice;
-    })
+        updateprice.textContent = finalPrice.toFixed(2);
+     })
     });
-})
+   });

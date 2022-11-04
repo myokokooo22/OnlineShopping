@@ -22,10 +22,6 @@
                     </button>
                    
                    <a href="#" class="navbar-brand mx-3"><h3>Brand<span>Name</span></h3></a>
-                   
-                    <div class="carts d-lg-none d-md-block mx-3">
-                        <a href="#" class="nav-link me-auto text-muted "><i class="fas fa-shopping-cart fa-2x"></i></a>
-                    </div>
 
                     <div id="nav" class="navbar-collapse collapse mx-3">
                         <ul class="navbar-nav mx-auto">
@@ -35,11 +31,11 @@
                             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
                        </ul>
-                      
-                       <div class="carts">
-                        <a href="#" class="nav-link me-auto text-muted" data-bs-toggle="modal" data-bs-target="#modal"><i class="fas fa-shopping-cart fa-2x"></i></a>
-                       </div>
 
+                    </div>
+
+                    <div class="mx-4 carts">
+                        <a href="#" class="nav-link me-auto text-muted" data-bs-toggle="modal" data-bs-target="#modal"><i class="fas fa-shopping-cart fa-2x"></i></a>
                     </div>
                 </nav>
 
@@ -49,8 +45,8 @@
 
     <!-- START PRODUCT SECTION  -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-3">
+            <div class="row product-lists">
+                <div class="col-lg-4 col-sm-6 mb-3">
                     <div class="item">
                         <div class="img-section">
                             <img src="./assets/imgs/datas/women/girlderss_1.png" alt="">
@@ -66,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-3">
+                <div class="col-lg-4 col-sm-6 mb-3">
                     <div class="item">
                         <div class="img-section">
                             <img src="./assets/imgs/datas/women/girljeans_1.png" alt="">
@@ -81,13 +77,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="item">
+                        <div class="img-section">
+                            <img src="./assets/imgs/datas/women/girlblouse_1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <h4>Girl Blouse</h4>
+                            <p>Availble Color: <span>Red</span></p> 
+                            $<span class="fw-bold price">19.50</span>
+                            <div>
+                                <button class="addtocart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     
 
         <!-- Start Shop Cart Modal-->
         <div class="modal fade" id="modal">
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-md">
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="">Your Shop List</h1>
@@ -110,7 +122,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <p><span>$</span><span id="total">32.05</span></p>
+                    <p><span>$</span><span id="total"></span></p>
                   <button type="button" class="btn checkout">Check Out</button>
                 </div>
               </div>

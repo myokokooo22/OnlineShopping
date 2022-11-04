@@ -1,0 +1,28 @@
+{
+    "myshop":[     
+       {
+       
+          "imgs":"../imgs/datas/women/girljeans_1.png",
+          "itemName":"Girl Jeans",
+          "price":"28.00",
+          "color":"blue",
+          "category":"women"
+       },
+       {
+       
+          "imgs":"../imgs/datas/women/girldress_1.png",
+          "itemName":"Girl Dress",
+          "price":"36.50",
+          "color":"white",
+          "category":"women"
+       },
+       {
+        
+        "imgs":"../imgs/datas/women/girlblouse_1.png",
+        "itemName":"Blouse",
+        "price":"19.50",
+        "color":"red",
+        "category":"women"
+     }
+    ]
+ }
